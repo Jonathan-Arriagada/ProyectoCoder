@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -9,28 +9,34 @@
 }
 
 body {
-  background-color: #131312;
-  color: whitesmoke;
-  background-image: url(/images/fondo.png);
-  background-size: cover;
-  
+  /* background-color: #131312; */
+  color: #f8f9fa;
+  background-image: url(/images/fondo.jpg);
+  background-size: cover; 
 }
 header {
   grid-area: header;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif; 
 }
 main {
   grid-area: main;  
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 3px 40px 10px;
 }
 aside{
   grid-area: aside;
 }
 footer{
   grid-area: footer;
+  background-color: #0000009f;
+  width: 100%;
+  display: flex;
+  align-items:flex-end;  
+  justify-content: space-between;
+  margin-bottom: 4px;
+
 }
-ul {
+.ul{    
   list-style: none;
   
 }
@@ -42,11 +48,17 @@ a {
   text-decoration: none;
   color: whitesmoke;
 }
-.container-index{
-  display: grid;
+h1{ 
+  margin: 30px 0px;
+}
+hr{
+  margin: 10px 0px;
+}
+.container-index{ 
+  display: grid;  
   min-height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;  
   grid-template-areas: 
   "header"
   "main"
@@ -58,8 +70,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #131312;
-  background-image: url(/images/banner.png);
+  background-color: #0000009f;
+  /* background-image: url(/images/banner.png);   */
   background-size: contain;
 }
 .barraImage { 
@@ -94,9 +106,13 @@ li:hover{
 .productos {
   border: outset 2px white;
   color: white;
-  background-color: red;
+  background-color: #1313127e;
   font-weight: bold;  
   padding: 5px;
+}
+input:hover{
+  background-color: #131312;
+  color: rgba(255, 0, 0, 0.466);
 }
 .marco {
   margin-top: 10px;
@@ -121,13 +137,18 @@ display: grid;
 min-height: 100vh;
 grid-template-columns: 1fr;
 grid-template-rows: auto 1fr auto;
-grid-template-areas: 
+grid-template-areas:  
 "header"
 "main"
 "footer"
 }
 .container-galery{
   display: grid;
+  background-image: url(/images/fondo.png);
+  background-size:contain;
+  background-position: 50%;
+  background-repeat:space;
+  background-color: black;
   min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
@@ -136,14 +157,46 @@ grid-template-areas:
   "main"
   "footer"
 }
+.container-consulta{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.redes{
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+.redes img{
+  width: 50px;
+  height: 40px;
+  margin-top: 5px;
+}
+.redes label{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.container-footer{
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;  
+}
+
 @media screen and (max-width: 568px) {
 
+  main {
+    margin: 6px;
+  }
   .barraNavegacion {
-    
-    flex-wrap: wrap;
+   
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+  .barraImage { 
+    margin: 15px 0px;  
   }
   video{
     width: 100%;
@@ -157,4 +210,21 @@ grid-template-areas:
     width: auto;
     height: auto;
   }  
+  .marco {
+    padding: 0px;   
+  }
+  .container-consulta{
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  .redes label{
+    margin: 10px 0px;
+  }
+  footer{
+    align-items:center;   
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+  
+    
 }
