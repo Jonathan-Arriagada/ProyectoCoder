@@ -37,8 +37,8 @@ footer{
 
 }
 .ul{    
-  list-style: none;
-  
+  list-style: none; 
+
 }
 li {
   display: inline;
@@ -71,8 +71,7 @@ hr{
   justify-content: space-between;
   align-items: center;
   background-color: #0000009f;
-  /* background-image: url(/images/banner.png);   */
-  background-size: contain;
+
 }
 .barraImage { 
   display: flex;
@@ -157,12 +156,19 @@ grid-template-areas:
   "main"
   "footer"
 }
+
 .container-consulta{
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+input:focus{
+  color:beige;
+}
+input::placeholder{
+  color:#131312;
 }
 .redes{
   max-width: 600px;
@@ -183,7 +189,7 @@ grid-template-areas:
   align-content: center;
   justify-content: flex-end;  
 }
-
+  
 @media screen and (max-width: 568px) {
 
   main {
@@ -225,6 +231,22 @@ grid-template-areas:
     flex-wrap: wrap;
     flex-direction: column;
 }
-  
-    
+  .seccion-productos1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-productos2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-productos3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
