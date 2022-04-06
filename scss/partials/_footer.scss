@@ -1,0 +1,30 @@
+footer{
+    grid-area: footer;
+    background-color: #0000009f;
+    width: 100%;
+    display: flex;
+    align-items:flex-end;  
+    justify-content: space-between;
+    margin-bottom: 4px;
+    .redes{
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 50px;
+            height: 40px;
+            margin-top: 5px;
+            }
+        label{
+            margin-top: 10px;
+            margin-left: 5px;
+            }    
+
+        
+    }
+    .container-footer{
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;  
+    }
+  }

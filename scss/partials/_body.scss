@@ -1,0 +1,22 @@
+body {
+    color: #f8f9fa;
+    background-image: url(/images/fondo.jpg);
+    background-size: cover; 
+  
+  .container-index{ 
+    display: grid;  
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;  
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    }
+  .wp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    }
+  }

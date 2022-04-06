@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+@import "./partials/header";
+@import "./partials/body";
+@import "./partials/footer";
+@import "./partials/section";
+@import "./partials/aside";
+@import "./partials/main";
+@import "./partials/mediaq";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }

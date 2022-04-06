@@ -1,0 +1,60 @@
+@media screen and (max-width: 568px) {
+
+    main {
+      margin: 6px;
+    }
+    nav {
+         
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .barraImage { 
+      margin: 15px 0px;  
+    }
+    video{
+      width: 100%;
+      height: 100%;
+    }
+    .info img {
+      width: 100%;
+      height: 100%;
+    }
+    .mapa {
+      width: auto;
+      height: auto;
+    }  
+    .marco {
+      padding: 0px;   
+    }
+    .container-consulta{
+      justify-content:center;
+      flex-wrap: wrap;
+    }
+    .redes label{
+      margin: 10px 0px;
+    }
+    footer{
+      align-items:center;   
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+    .seccion-productos1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .seccion-productos2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .seccion-productos3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }  
