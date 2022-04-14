@@ -7,10 +7,6 @@ header {
         justify-content: space-between;
         align-items: center;
         background-color: #0000009f;
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-        }
         .barraImage { 
             display: flex;
             height: 100px;
@@ -20,9 +16,14 @@ header {
         }   
         ul{    
             list-style: none;
+            li {
+                display: inline;
+                padding: 10px;                    
+                }   
+
             .botones{
                 margin-top: 10px;
-                border: solid 2px white;
+                border: solid 2px map-get($variables,color-pr);
                 padding: 6px;
                 width: fit-content;
                 border-radius: 10px;
@@ -30,19 +31,12 @@ header {
             } 
             a {
                 text-decoration: none;
-                color: whitesmoke;
+                color: map-get($variables,color-pr);
             }
-            li {
-                display: inline;
-                padding: 10px;
-                :hover {
-                    background-color: grey;  
-                       
-                } 
-            }
-            
-            
-        }
+            li:hover{
+                background-color: grey;  
+               }     
+        }   
     }
 }
 

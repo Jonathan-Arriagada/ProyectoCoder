@@ -1,3 +1,19 @@
+.container-info{
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header header"
+  "main aside"
+  "footer footer"
+  ;
+}
 aside{
     grid-area: aside;
   }
+  .info {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  } 

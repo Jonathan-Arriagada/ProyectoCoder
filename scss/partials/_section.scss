@@ -8,7 +8,7 @@ section{
     }
     .marco {
         margin-top: 10px;
-        border: solid 2px white;
+        border: solid 2px map-get($variables,color-pr);
         padding: 6px;
         width: fit-content;
         background-color: #131312b7;

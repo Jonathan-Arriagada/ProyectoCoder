@@ -1,22 +1,53 @@
 body {
-    color: #f8f9fa;
+    color: map-get($variables,color-pr);
     background-image: url(/images/fondo.jpg);
     background-size: cover; 
+    }
   
   .container-index{ 
-    display: grid;  
-    min-height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;  
+    @extend %grid;   
     grid-template-areas: 
     "header"
     "main"
     "footer"
     ;
     }
+    .container-info{
+      display: grid;
+      min-height: 100vh;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: 
+      "header header"
+      "main aside"
+      "footer footer"
+      ;
+    }
+    .container-galery{
+      display: grid;
+      background-image: url(/images/fondo.png);
+      background-size:contain;
+      background-position: 50%;
+      background-repeat:space;
+      background-color: black;
+      min-height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer"
+    }
+  .container-contact{
+      @extend %grid;    
+      grid-template-areas:  
+      "header"
+      "main"
+      "footer"
+    }
   .wp {
     position: fixed;
     bottom: 40px;
     right: 40px;
     }
-  }
+  

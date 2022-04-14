@@ -2,4 +2,42 @@ main {
     grid-area: main;  
     font-family: "Montserrat", sans-serif;
     margin: 3px 40px 10px;
+  
+  .marco {
+    margin-top: 10px;
+    border: solid 2px map-get($variables,color-pr);
+    padding: 6px;
+    width: fit-content;
+    background-color: #131312b7;
+    border-radius: 10px;
   }
+  .seccion-productos1{
+    @include flex (flex,column,center,center);
+  }
+  .productos {
+    border: outset 2px map-get($variables,color-pr);
+    color: map-get($variables,color-pr);
+    background-color: #1313127e;
+    font-weight: bold;  
+    padding: 5px;
+  }
+  .seccion-productos2{
+    @include flex (flex,column,center,center);
+  }  
+  .seccion-productos3{  
+    @include flex (flex,column,center,center);
+  }
+  input:focus{
+    color:beige;
+  }
+  input::placeholder{
+    color:#131312;
+  }
+  input:hover{
+    background-color: #131312;
+    color: rgba(255, 0, 0, 0.466);
+  }
+  .mapa {
+    margin-left: 70px;
+  }
+  }  

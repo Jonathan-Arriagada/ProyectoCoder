@@ -1,0 +1,17 @@
+$variables: (
+    color-pr: white,
+    color-se: grey,
+);
+
+@mixin flex ($dp,$f-d,$a-i,$j-c) {
+    display: $dp;
+    flex-direction: $f-d;
+    align-items: $a-i;
+    justify-content: $j-c;    
+};
+%grid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+};
