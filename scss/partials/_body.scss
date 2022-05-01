@@ -48,6 +48,10 @@ body {
   .wp {
     position: fixed;
     bottom: 40px;
-    right: 40px;
+    right: 50px;
     }
-  
+  .scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

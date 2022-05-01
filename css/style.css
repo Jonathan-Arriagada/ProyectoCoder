@@ -53,7 +53,19 @@ body {
 .wp {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 50px;
+}
+
+.scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
@@ -326,6 +338,7 @@ footer .container-footer {
 @media screen and (max-width: 568px) {
   main {
     margin: 6px;
+    max-width: auto;
   }
   nav {
     -webkit-box-pack: center;
@@ -338,17 +351,16 @@ footer .container-footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .barraImage {
     margin: 15px 0px;
   }
-  video {
-    width: 100%;
-    height: 100%;
-  }
   .info img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
   }
   .mapa {
     width: auto;
@@ -361,8 +373,7 @@ footer .container-footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 55%;
   }
   .redes label {
     margin: 10px 0px;
@@ -377,6 +388,41 @@ footer .container-footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 55%;
+  }
+  aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container-info {
+    display: -ms-grid;
+    display: grid;
+    min-height: 100vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: "header" "main"  "aside" "footer";
+  }
+  .container-contact {
+    display: -ms-grid;
+    display: grid;
+    min-height: 100vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header" "main" "footer";
   }
 }
 

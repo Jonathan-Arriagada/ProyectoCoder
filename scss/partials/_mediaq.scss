@@ -1,24 +1,21 @@
 @media screen and (max-width: 568px) {
 
     main {
-      margin: 6px;
+     margin: 6px;  
+     max-width: auto;
     }
-    nav {
-         
+    nav {     
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      max-width: fit-content;
     }
     .barraImage { 
       margin: 15px 0px;  
     }
-    video{
-      width: 100%;
-      height: 100%;
-    }
-    .info img {
-      width: 100%;
-      height: 100%;
+     .info img {
+      width: 50%;
+      height: 50%;
     }
     .mapa {
       width: auto;
@@ -26,10 +23,11 @@
     }  
     .marco {
       padding: 0px;   
+      
     }
     .container-consulta{
-      justify-content:center;
-      flex-wrap: wrap;
+     justify-content:center;
+     width: 55%;    
     }
     .redes label{
       margin: 10px 0px;
@@ -38,6 +36,39 @@
       align-items:center;   
       flex-wrap: wrap;
       flex-direction: column;
-  }
+      max-width:55%;
 
+  }
+  aside{
+    flex-direction: column;
+  }
+  section{
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+  }
+ 
+  .container-info{
+      display: grid;
+      min-height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas: 
+      "header"
+      "main" 
+      "aside"
+      "footer"
+      ;
+    }
+    .container-contact{
+      display: grid;
+      min-height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:  
+      "header"
+      "main"
+      "footer"
+    }
+ 
   }  
