@@ -33,11 +33,6 @@ body {
 .container-galery {
   display: -ms-grid;
   display: grid;
-  background-image: url(/images/fondo.png);
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: space;
-  background-color: black;
   min-height: 100vh;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
